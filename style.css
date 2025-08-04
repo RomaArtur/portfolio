@@ -1,6 +1,7 @@
 body {
     margin: 0;
     min-height: 100vh;
+    padding: 5vh 0;
     font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center;
@@ -12,6 +13,8 @@ body {
 
 /* CONTAINER */
 .container {
+    overflow: hidden;
+    transform-origin: center;
     background: #fff;
     padding: 25px;
     border-radius: 18px;
@@ -19,10 +22,11 @@ body {
     width: 90%;
     box-sizing: border-box;
     transition: transform 0.3s, box-shadow 0.3s;
+    margin: 20px;
 }
-.container:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px #fff;
+
+.container:hover{
+       box-shadow: 0 0 20px #ffffff;
 }
 
 /* IMAGEM DE PERFIL */
@@ -35,27 +39,23 @@ body {
     object-fit: cover;
     transition: border 0.3s, transform 0.3s, box-shadow 0.3s;
 }
+
+
 .img-perfil:hover {
     border-color: #38df96;
     transform: scale(1.05);
     box-shadow: 0 0 20px #38df96;
 }
 
-/* NOME */
-.nome,
-.bio {
-    transition: letter-spacing 0.3s, transform 0.3s;
-}
-.nome:hover,
-.bio:hover {
-    transform: scale(1.01);
-    letter-spacing: 1px;
-}
-
-/* BIOGRAFIA */
+/*BIOGRAFIA*/
 .bio {
     margin-bottom: 20px;
     font-weight: 500;
+    transition: letter-spacing 0.3s, transform 0.3s;
+}
+.bio:hover {
+    transform: scale(1.01);
+    letter-spacing: 1px;
 }
 
 /* BOTÕES */
@@ -96,4 +96,23 @@ body.dark .bio {
 }
 body.dark .img-perfil {
     border-color: #38df96;
+}
+
+@media (max-width: 480px) {
+  .container {
+    transform: scale(1.10);
+    padding: 30px 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    transform: scale(0.75); 
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    transform: scale(0.65);
+  }
 }
