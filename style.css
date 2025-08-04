@@ -1,35 +1,31 @@
 body {
     margin: 0;
-    height: 100vh;
-
+    min-height: 100vh;
     font-family: 'Poppins', sans-serif;
-
     display: flex;
-    text-align: center;
     justify-content: center;
     align-items: center;
+    text-align: center;
     background: url('assets/img/img-fundo.png') center/cover no-repeat;
-
-    transition: background-color 0.3s ease, color 0.3s ease
-
+    transition: background-color 0.3s, color 0.3s;
 }
-/*CONTAINER*/
+
+/* CONTAINER */
 .container {
-    background-color: #ffffff;
+    background: #fff;
     padding: 25px;
-    border-radius:18px;
-    max-width: 300px;
+    border-radius: 18px;
+    max-width: 400px;
     width: 90%;
     box-sizing: border-box;
-
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
-
 .container:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 20px #ffffff;
+    box-shadow: 0 0 20px #fff;
 }
-/*IMAGEM DE PERFIL*/
+
+/* IMAGEM DE PERFIL */
 .img-perfil {
     width: 200px;
     height: 200px;
@@ -37,104 +33,67 @@ body {
     border: 3px solid #310d4e;
     border-radius: 50%;
     object-fit: cover;
-
-    transition: border 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    transition: border 0.3s, transform 0.3s, box-shadow 0.3s;
 }
-
 .img-perfil:hover {
-    border: 3px solid #38df96;
+    border-color: #38df96;
     transform: scale(1.05);
     box-shadow: 0 0 20px #38df96;
 }
-/*NOME*/
-.nome {
 
-     transition: letter-spacing 0.3s ease, transform 0.3s ease;
-}
-
-.nome:hover {
-    transform: scale(1.01);
-    letter-spacing: 1px;
-}
-/*BIOGRAFIA*/
+/* NOME */
+.nome,
 .bio {
-    margin-bottom: 20px;
-    font-weight: 500;
-
-     transition: letter-spacing 0.3s ease, transform 0.3s ease;
+    transition: letter-spacing 0.3s, transform 0.3s;
 }
-
+.nome:hover,
 .bio:hover {
     transform: scale(1.01);
     letter-spacing: 1px;
 }
-/*BOt’ES*/
-.link-botao {
+
+/* BIOGRAFIA */
+.bio {
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+/* BOT’ES */
+.link-botao,
+#modo-noturno {
     all: unset;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-decoration: none;
-
     width: 100%;
     margin: 10px 0;
     padding: 12px;
     border-radius: 18px;
     gap: 12px;
-
-    background-color: #310d4e;
-    color: #ffffff;
-
-
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    background: #310d4e;
+    color: #fff;
+    text-decoration: none;
     box-sizing: border-box;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
 }
-
-.link-botao:hover {
-    background-color: #38df96;
-    color: #000000;
+.link-botao:hover,
+#modo-noturno:hover {
+    background: #38df96;
+    color: #000;
     transform: translateY(-2px);
 }
 
-/*MODO NOTURNO*/
+/* MODO NOTURNO */
 body.dark .container {
-  background-color: #1c1b1d;
+    background: #1c1b1d;
 }
 body.dark .container:hover {
     box-shadow: 0 0 20px #1c1b1d;
 }
-
 body.dark .nome,
 body.dark .bio {
-  color: #ffffff;
+    color: #fff;
 }
-
 body.dark .img-perfil {
-  border: 3px solid #38df96;
-}
-
-#modo-noturno {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-
-    width: 100%;
-    margin: 10px 0;
-    padding: 12px;
-    border-radius: 18px;
-    gap: 12px;
-
-    background-color: #310d4e;
-    color: #ffffff;
-
-
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    box-sizing: border-box;
-}
-
-#modo-noturno:hover {
-    background-color: #38df96;
-    color: #000000;
-    transform: translateY(-2px);
+    border-color: #38df96;
 }
