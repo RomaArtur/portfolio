@@ -113,6 +113,6 @@ body.dark .img-perfil {
 
 @media (min-width: 1600px) {
   .container {
-    transform: scale(0.65);
+    transform: scale(1.0);
   }
 }
