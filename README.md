@@ -2,6 +2,8 @@
 
 Este é o meu portfólio pessoal, onde você pode encontrar informações sobre mim e meus projetos.
 
+https://artur-portfolio-projects.netlify.app/
+
 ## Tecnologias Utilizadas
 
 - HTML
