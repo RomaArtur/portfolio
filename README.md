@@ -6,8 +6,8 @@ https://artur-portfolio-projects.netlify.app/
 
 ## Tecnologias Utilizadas
 
-- HTML
-- CSS
+- HTML5
+- CSS3
 - JavaScript
 
 ## Contato
