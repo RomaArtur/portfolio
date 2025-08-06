@@ -11,9 +11,6 @@ https://artur-portfolio-projects.netlify.app/
 - JavaScript
 
 ## Contato
-
-Você pode me encontrar nas redes sociais:
-
 - [LinkedIn](https://www.linkedin.com/in/artur-roma-furtado/)
 - [GitHub](https://github.com/RomaArtur)
 - [WhatsApp](https://bit.ly/4lTIueG)
